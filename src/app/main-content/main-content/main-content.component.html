@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Books</h1>
+    <mat-form-field class="form">
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput type="search" [(ngModel)]="searchText" placeholder="Search" class="search-input">
+    </mat-form-field>
+    <button mat-raised-button color="primary">Create New Book</button>
+
+    <h2>All Books</h2>
+
+    <div class="row">
+        <div *ngFor="let book of booksList | filter: searchText" class="col-sm-12 col-lg-6">
+            <div class="books-card">
+                <div class="title">{{book.volumeInfo.title}}</div>
+                <div class="sub-details">
+                    <span>Authors: </span>
+                    <span *ngFor="let author of book.volumeInfo.authors">
+                        {{author}}
+                    </span>
+                </div>
+                <div class="sub-details">
+                    <span>Publisher: </span>
+                    {{book.volumeInfo.publisher}}</div>
+                <div class="sub-details">
+                    <span>Published Date: </span>
+                    {{book.volumeInfo.publishedDate}}</div>
+            </div>
+        </div>
+    </div>
+</div>

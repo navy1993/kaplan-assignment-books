@@ -1,0 +1,17 @@
+<div class="sidenav_container" [@onSideNavChange]="sideNavState ? 'open' : 'close'">
+
+  <div class="user-menu">
+    <div class="item" (click)="onSinenavToggle()">
+      <img src="../../assets/list.png">
+      <span [@animateMenuText]="sideNavState ? 'open' : 'close'" *ngIf="sideNavState">Menu</span>
+    </div>
+    <div class="item">
+      <img src="../../assets/tab.png">
+      <span [@animateMenuText]="sideNavState ? 'open' : 'close'" *ngIf="sideNavState">Content Management</span>
+    </div>
+    <div class="item">
+      <img src="../../assets/tab.png">
+      <span [@animateMenuText]="sideNavState ? 'open' : 'close'" *ngIf="sideNavState">Courses</span>
+    </div>
+  </div>
+</div>

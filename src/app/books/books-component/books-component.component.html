@@ -1,0 +1,13 @@
+<mat-sidenav-container class="example-container">
+
+  <mat-sidenav class="sidebar-container" #leftSidenav mode="side" opened>
+    <app-side-menu></app-side-menu>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="sidebar-main-container" [@onMainContentChange]="onSideNavChange ? 'open': 'close'">
+    <div class="header">
+      <img src="../../../assets/atom.png" />
+    </div>
+    <app-main-content></app-main-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

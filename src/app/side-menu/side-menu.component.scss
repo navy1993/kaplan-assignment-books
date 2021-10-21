@@ -1,0 +1,22 @@
+.sidenav_container {
+    min-width: 60px; 
+    height: 100%;
+    border-right: 2px solid darkgray;
+    .user-menu {
+      padding: 15px;
+      .item {
+        margin: 20px 0;
+      }
+    }
+  }
+  img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .jim {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+  }

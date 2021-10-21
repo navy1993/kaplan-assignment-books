@@ -1,0 +1,16 @@
+.example-container, .sidebar-container {
+    height: 100%;
+    background-color: white;
+    color: black;
+
+    .sidebar-main-container {
+        background-color: #FAFAFA;
+    }
+    .header {
+        background-color: white;
+    }
+    img {
+        width: 6rem;
+        height: 6rem;
+    }
+}
